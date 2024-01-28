@@ -1,0 +1,58 @@
+/******* Change Box Model ***************/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* Hero section */
+#hero {
+    position: relative;
+}
+
+#hero-img {
+    width: 100%;
+    height: auto;
+}
+
+#banner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    
+    padding-bottom: 20rem;
+}
+
+/* Reviews section */
+.reviews-section1, .reviews-section2 {
+    margin: 20px 0;
+}
+
+#reviews {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Upgrades section */
+.upgrades-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.upgrade {
+    text-align: center;
+}
+  
+  
+  
