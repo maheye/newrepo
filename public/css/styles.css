@@ -105,67 +105,20 @@ h1 {
   margin-bottom: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.image-container-1 {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.image-container-2 {
-  padding-top: 14px;
-  padding-bottom: 14px;
-}
-
-.image-container-3 {
-  padding-top: 2px;
-  padding-bottom: 2px;
-}
-
-hr {
-  border-top: 3px solid #3a3a3a;
-}
-
-footer {
-  text-align: left;
-  font-size: 1.1em;
-  margin-bottom: 0;
-}
-
-footer p {
-  margin-bottom: 15px;
-}
-
-
-
-.home-section-2 {
+#hero2 {
   margin-top: 5px;
-  display: grid;
-  grid-template-columns: 1fr;
   margin-left: 10px;
   margin-right: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-.home-section-2 h3 {
-  font-size: 1.3em;
+.reviews-section1 {
+  margin-left: 20px;
 }
 
-.subsection {
-  width: 100%;
-}
-
-.subsection h3 {
+#reviews-title1, #reviews-title2 {
+  font-size: 1.5em;
   margin: 15px 0 20px 0;
 }
 
@@ -174,7 +127,6 @@ footer p {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 95%;
-  /* margin-bottom: 40px; */
 }
 
 .upgrade {
@@ -185,7 +137,7 @@ footer p {
   margin-bottom: 20px;
 }
 
-.image-container {
+.upgrades-container img {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -207,134 +159,71 @@ footer p {
   padding: 5px 0;
 }
 
-.home-container h1 {
-  font-size: 1.5em;
+footer {
+  text-align: left;
+  font-size: 1.1em;
+  margin-bottom: 0;
 }
 
-.home-section-1 {
-  margin-left: 5px;
-  margin-right: 5px;
+footer p {
+  margin-bottom: 15px;
 }
 
-@media only screen and (min-width: 450px) {
-  .home-section-2 {
-    margin-top: 10px;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
+@media only screen and (min-width: 650px) {
 
-  .home-section-1 {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-
-  .home-container h1 {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-
-  .banner-details {
-    width: 39%;
-    /* max-width: 195px; */
-  }
-
-  .banner-details h2 {
-    font-size: 1.3em;
-  }
-
-  .banner-details p {
-    font-size: 1.1em;
-  }
-
-  .banner-details img {
-    max-width: 150px;
-  }
-
-  .home-container h1 {
-    font-size: 1.7em;
-  }
-
-
+body {
+  background-image: url("../images/site/small_check.jpg");
+  background-size: cover;
 }
 
-@media only screen and (min-width: 610px) {
-    body {
-        background-image: url("../images/site/small_check.jpg");
-        background-size: cover;
-    }
+#wrapper {
+  background-color: #ffffff;
+  margin: 20px auto;
+  max-width: 700px;
+  border: 3px solid #4c96d7;
+  border-radius: 4px;
+}
 
-    #wrapper {
-        background-color: #ffffff;
-        margin: 20px auto;
-        max-width: 700px;
-        border: 3px solid #4c96d7;
-        border-radius: 4px;
-    }
+#banner img {
+  display: block;
+}
+  
+#hero2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  
+}
 
-    /* .own {
-        display: block;
-    } */
-    
-    .home-section-2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-  
-    .subsection-1 {
-        grid-column: 2/3;
-        margin-left: 10px;
-    }
-  
-    .subsection-2 {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-  
-    .home-section-2 {
-      margin-top: 10px;
-      margin-right: 15px;
-      margin-left: 15px;
-    }
-  
-    /* .action-button {
-        display: none;
-    } */
-  
-    .banner-details {
-        padding: 0 0 0 50px;
-        width: 42%;
-    }
-  
-    .home-section-1 {
-        max-height: 225px;
-        height: 300px;
-    }
-  
-    .home-container h1 {
-        margin: 20px;
-        margin-left: 10px;
-    }
+#reviews-section1 {
+  grid-column: 3/4;
+  margin-top: 5px;
+}
 
-    .banner-details h2 {
-      font-size: 1.5em;
-    }
+#reviews-section2 {
+  grid-column: 1/3; 
+  grid-row: 1/2;
   
-    .banner-details p {
-        font-size: 1.3em;
-    }
+}
 
-    .banner-details img {
-      width: 80%;
-    }
+#hero2 {
+  margin-top: 0;
+}
 
-    footer p, footer a {
-      margin-left: 15px;
-    }
 
-    /*************************** 
-    * Classification View
-    ***************************/
-    #inv-display {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
+#banner {
+  padding: 0 0 0 20px;
+}
+
+#hero {
+  height: 380px;
+}
+
+h1 {
+  margin: 20px;
+}
+
+#banner br {
+  font-size: 1.1em;
+}
 }
