@@ -1,0 +1,31 @@
+<!-- Content Heading -->
+<% if(title) { %>
+    <h1><%= title %></h1>
+    <% } else {
+        res.redirect('/')
+    } %>
+    
+    <!-- Message Block -->
+    <%- messages() %>
+    
+    <% if (errors) { %>
+        <ul class="notice">
+            <% errors.array().forEach(error => { %>
+                <li><%= error.msg %></li>
+            <% }) %>
+        </ul>
+    <% } %>
+    
+    <!-- Account Management Display -->
+    
+    <h2>Welcome <%= locals.accountData.account_firstname %></h2>
+    
+    <p>You're logged in.</p>
+    
+    <p><a href='/update/${account_id}'>Edit Account Information</a></p>
+    
+    <% if (locals.accountData.account_type == "Admin" || locals.accountData.account_type == "Employee") { %>
+        <h3>Inventory Management</h3>
+    
+        <p><a href="/inv/" title="Click to navigate to the inventory management">Manage Inventory</a></p>
+    <% } %>
